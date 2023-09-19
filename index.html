@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Startowa</title>
+    <style>
+        /* Dodaj tutaj stylizację CSS */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px; /* Ustaw szerokość logo */
+            height: auto; /* Automatycznie dostosuj wysokość do zachowania proporcji */
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Strony">
+        <h1>Anatolii Karpevych</h1>
+    </header>
+    
+    <nav>
+        <a href="https://www.igf.edu.pl/" target="_blank">Strona Główna</a>
+        <a href="https://www.youtube.com/watch?v=-LLf9RNcByk" target="_blank">Podstrona 1</a>
+        <a href="https://portal.librus.pl/" target="_blank">Podstrona 2</a>
+        <a href="https://pl-pl.facebook.com/" target="_blank">Podstrona 3</a>
+    </nav>
+    
+    <section>
+        <h2>Witam na Stronie Startowej</h2>
+        <p>Lubimy Sora Jakuba.</p>
+         mn
+        <img src="2.5 rysunek.png" alt="Rysunek 2.5">
+    </section>
+    
+    <footer>
+        <p>© 2023 Anatolii Karpevych</p>
+        <p>Data: <span id="currentDate"></span></p>
+    </footer>
+    
+    <script>
+        // Skrypt JavaScript do wyświetlania aktualnej daty
+        const currentDateElement = document.getElementById("currentDate");
+        const currentDate = new Date();
+        currentDateElement.textContent = currentDate.toLocaleDateString();
+    </script>
+</body>
+</html>
